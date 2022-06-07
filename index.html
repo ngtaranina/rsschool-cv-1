@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-<!--общие настройки-->
+  <!--общие настройки-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--подключили стили и фавиконку-->
+  <!--подключили стили и фавиконку-->
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./assets/img/fox.ico">
-<!--добавили заглавие-->
-    <title>CV</title>
-<!--код для шрифта Joan -->
+  <!--код для шрифта Joan -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
-
+  <!--добавили заглавие-->
+    <title>CV</title>
 </head>
 
-<body {min-height: 100vh}>
-    <header class = "header">
-      <div class="container header-container">
+<body>
+  <header class = "header">
+    <div class="container header-container">
     <!--блок навигации по странице-->
       <nav class="nav">
         <ul class="nav-list">
@@ -34,62 +33,92 @@
         </ul>
       </nav>
     </div>
-    </header>
-    
-    <main>
-         
-        CV Olesya Makarova
+  </header>
+  <hr>  
+  <main>
+    <h1>CV Olesya Bulgakova</h1>
+    <img src="./assets/img/image.jpg" alt="my photo">
 
-          <div>Contacts:
-          <ul>
-          <li>phone: +380633216088</li>
+    <hr>
+
+    <section class="contacts"><a name="contacts"></a>
+      <h2>Contacts:</h2>
+        <ul>
+          <li>phone: +38(0**)*******</li>
           <li>rs-nickname: bulgakovatodays</li>
           <li>telegram: @bulgakovatodays</li>
-          </ul>
-                  
-          Summary
-          I am a lawyer from Kharkov. I thought about learning programming and programming languages for a long time, so the february events encourage me to start learning. I haven`t a lot of knowledge now, but I want to study and learn.
-                  
-          Skills:
-          basics HTML и JavaSkript
-                  
-          Code examples:
-          <code><pre>
-          export const checkSpam = (text, spamKeywords) => 
-          {
-          //1 перевести всё в малый регистр
-            let lowText = text.toLowerCase();
-          //2 убрать всё, кроме букв
-            lowText = lowText.replace(/[^a-zа-яё\s]/gi, '');
-            lowText = lowText.replace(/\s+/g, ' ');
-            console.log(lowText);
-          //3 проверяем каждое слово и формируем массив результатов
-          var spam = [];
-          for (let i = 0; i < spamKeywords.length; i++)
-            {
-            spam.push (lowText.includes(spamKeywords[i]));
-            console.log (spam.length);
-            console.log (spam)
-            }
-          //4 проверяем 
-          spam = spam.join(' ');
-          let result = spam.includes('true');
-          return result
-          }
-          </pre></code>
-                  
-          Work experience:
-          At this moment I have done only this CV.
-                  
-          Education:
-          This course de facto is my first.
-                  
-          English level:
-          A2-B1 (pre-intermediate)
+        </ul>
+    </section>
 
-    </main>
+    <hr>              
+
+    <section class="summary"><a name="summary"></a>
+      <h2> Summary</h2>
+      <p>I am a lawyer from Kharkov. I thought about learning programming and programming languages for a long time, so the february events encourage me to start learning. I haven`t a lot of knowledge now, but I want to study and learn.</p>
+    </section>
+
+    <hr>
+
+    <section><h2>Skills:</h2>
+      <p>basics HTML и JavaSkript</p>
+    </section>
+
+    <hr>
+    
+    <section class="code"><a name="code"></a>
+      <h2>Code examples:</h2>
+      <pre><code>
+        const capitalizeFirstWord = (s) => {
+        return s.replace(s[0], s[0].toUpperCase());
+        }
+      </code></pre>
+      <pre><code>
+        export const shortenByWords = (s, n) => {
+          let n1;
+          if (s.length <= n) {
+            return s;
+          }
+          else {
+            for (let i = n; i > 0; i--) {
+              if (s[i] === ' ') {
+                n1 = i;
+                break
+              }
+            }
+          return s.slice(0, n1)+"...";
+          }
+        }
+      </code></pre>
+    </section>
+
+    <hr>
+
+    <section class="experience"><a name="experience"></a>
+      <h2>Work experience:</h2>
+      <p>At this moment I have done only this CV.</p>
+    </section>
+
+    <hr>
+
+    <section class="education"><a name="education"></a>
+      <h2>Education:</h2>
+      <p>This course de facto is my first.</p>
+      <a href="https://ru.code-basics.com/languages/html">"HTML for beginners"</a>
+    </section>
+
+    <hr>
+
+    <section class="english"><a name="english"></a>
+      <h2>English level:</h2>
+      <p>B1 (pre-intermediate)</p>
+    </section>
+
+    <hr>
+
     <footer>
-        <img src="./assets/img/image.jpg" alt="my photo">
+      <address>O.V Makarova</address>
+      <time datetime="2022-06-07">07.06.2022</time>
     </footer>
+  </main>
 </body>
 </html>
