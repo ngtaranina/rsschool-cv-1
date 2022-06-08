@@ -22,14 +22,13 @@
     <!--блок навигации по странице-->
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-          <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
-          <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-          <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+          <li class="nav-item"><a href="#contacts" class="nav-link">1. Contacts</a></li>
+          <li class="nav-item"><a href="#summary" class="nav-link">2. Summary</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">3. Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">4. Code</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">5. Projects</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link">6. Courses</a></li>
+          <li class="nav-item"><a href="#english" class="nav-link">7. English</a></li>
         </ul>
       </nav>
     </div>
@@ -40,9 +39,9 @@
     <img src="./assets/img/image.jpg" alt="my photo">
 
     <hr>
-
-    <section class="contacts"><a name="contacts"></a>
-      <h2>Contacts:</h2>
+<!--Chapter #1-->
+    <section class="chapter chapter_1">
+      <h2 id="contacts">Contacts:</h2>
         <ul>
           <li>phone: +38(0**)*******</li>
           <li>rs-nickname: bulgakovatodays</li>
@@ -51,65 +50,52 @@
     </section>
 
     <hr>              
-
-    <section class="summary"><a name="summary"></a>
-      <h2> Summary</h2>
+<!--Chapter #2-->
+    <section class="chapter chapter_2">
+      <h2 id="summary"> Summary</h2>
       <p>I am a lawyer from Kharkov. I thought about learning programming and programming languages for a long time, so the february events encourage me to start learning. I haven`t a lot of knowledge now, but I want to study and learn.</p>
     </section>
 
     <hr>
-
-    <section><h2>Skills:</h2>
+<!--Chapter #3-->
+    <section class="chapter chapter_3">
+      <h2 id="skills">Skills:</h2>
       <p>basics HTML и JavaSkript</p>
     </section>
 
     <hr>
-    
-    <section class="code"><a name="code"></a>
-      <h2>Code examples:</h2>
+<!--Chapter #4-->
+    <section class="chapter chapter_4">
+      <h2 id="code">Code examples:</h2>
       <pre><code>
         const capitalizeFirstWord = (s) => {
         return s.replace(s[0], s[0].toUpperCase());
         }
       </code></pre>
-      <pre><code>
-        export const shortenByWords = (s, n) => {
-          let n1;
-          if (s.length <= n) {
-            return s;
-          }
-          else {
-            for (let i = n; i > 0; i--) {
-              if (s[i] === ' ') {
-                n1 = i;
-                break
-              }
-            }
-          return s.slice(0, n1)+"...";
-          }
-        }
-      </code></pre>
     </section>
 
     <hr>
-
-    <section class="experience"><a name="experience"></a>
-      <h2>Work experience:</h2>
-      <p>At this moment I have done only this CV.</p>
+<!--Chapter #5-->
+    <section class="chapter chapter_5">
+      <h2 id="projects">Work experience:</h2>
+      <p>At this moment I have done only <a href="https://github.com/bulgakovatodays/rsschool-cv/tree/rsschool-cv-html">this CV.</a></p>
     </section>
 
     <hr>
-
-    <section class="education"><a name="education"></a>
-      <h2>Education:</h2>
-      <p>This course de facto is my first.</p>
-      <a href="https://ru.code-basics.com/languages/html">"HTML for beginners"</a>
+<!--Chapter #6-->
+    <section class="chapter chapter_6">
+      <h2 id="courses">Education:</h2>
+      <p>This course de facto is my first big course.</p>
+      <p>Inside it I have just successfully completed:</p> 
+        <ul>
+          <li>the course <a href="https://ru.code-basics.com/languages/html">"HTML for beginners"</a></li>
+        </ul>
     </section>
 
     <hr>
-
-    <section class="english"><a name="english"></a>
-      <h2>English level:</h2>
+<!--Chapter #7-->
+    <section class="chapter chapter_7">
+      <h2 id="english">English level:</h2>
       <p>B1 (pre-intermediate)</p>
     </section>
 
