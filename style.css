@@ -1,15 +1,41 @@
+/* Универсальный селектор (звездочка) установил границы и внутренние отступы будут учитываться 
+в значениях, которые вы указываете в ширине и высоте элемента */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Joan', serif;
+  min-height: 100vh;
+}
+
+.nav-link {
+  padding: 5px;
+  border: 1px solid #100;
+  color: brown; 
+}
+
+nav {
+  text-decoration: none;
+}
+
+.chapter_2 {
+  text-align: justify;
+}
+
+h1 {
+  color:rgb(240, 25, 68);
+  text-align:center;
+}
+
+h2 {
+  color: brown;
+  font-variant: small-caps;
+}
+
+/* 
 m10 + Tab = margin: 10px;
 p10 + Tab = padding: 10px;
 bgc + Tab = background-color:
 bgi + Tab = background-image: url();
-
-border: 1px solid red;
-
-[свойство шрифта] font-family: 'Joan', serif;
-
-* {
-    box-sizing: border-box;
-  }
-
-
-body {min-height: 100vh}
+*/
