@@ -1,112 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!--общие настройки-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--подключили стили и фавиконку-->
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./assets/img/fox.ico">
-  <!--код для шрифта Joan -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
-  <!--добавили заглавие-->
+  <head>
+    <!--общие настройки-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--подключили стили и фавиконку-->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/img/fox.ico" />
+    <!--код для шрифта Joan -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Joan&display=swap"
+      rel="stylesheet"
+    />
+    <!--добавили заглавие-->
     <title>CV</title>
-</head>
+  </head>
 
-<body>
-  <header class = "header">
-    <div class="container header-container">
-    <!--блок навигации по странице-->
-      <nav class="nav">
-        <ol class="nav-list">
-          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-          <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
-          <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
-        </ol>
-      </nav>
-    </div>
-  </header>
-  <hr>  
-  <main>
-    <h1>CV Olesya Bulgakova</h1>
-    <img src="./assets/img/image.jpg" alt="my photo" width="340" height="420">
+  <body>
+    <header>
+      <div>
+        <!--блок навигации по странице-->
+        <nav class="nav">
+          <table>
+            <tr>
+              <td><a href="#contacts" class="nav-link">Contacts</a></td>
+              <td ><a href="#summary" class="nav-link">Summary</a></td>
+              <td ><a href="#skills" class="nav-link">Skills</a></td>
+              <td ><a href="#code" class="nav-link">Code</a></td>
+              <td ><a href="#projects" class="nav-link">Projects</a></td>
+              <td ><a href="#courses" class="nav-link">Courses</a></td>
+              <td ><a href="#english" class="nav-link">English</a></td>
+            </tr>
+          </table>
+        </nav>
+      </div>
+    </header>
 
-    <hr>
-<!--Chapter #1-->
-    <section class="chapter chapter_1">
-      <h2 id="contacts">Contacts:</h2>
-        <ul>
-          <li>phone: +38(0**)*******</li>
-          <li>rs-nickname: bulgakovatodays</li>
-          <li>telegram: @bulgakovatodays</li>
-        </ul>
-    </section>
+    <main>
+      <h1>CV Olesya Bulgakova</h1>
+      <table class="table_1">
+        <tr>
+          <td>
+            <img src="./assets/img/image.jpg" alt="my photo" height="200" class="profile__avatar">
+          </td>
 
-    <hr>              
-<!--Chapter #2-->
-    <section class="chapter chapter_2">
-      <h2 id="summary"> Summary</h2>
-      <p>I am a lawyer from Kharkov. I thought about learning programming and programming languages for a long time, so the february events encourage me to start learning. I haven`t a lot of knowledge now, but I want to study and learn.</p>
-    </section>
+          <td>
+            <!--Summary-->
+            <section class="chapter">
+              <h2 id="summary">Summary</h2>
+              <p class="chapter_2">
+                I am a lawyer from Kharkov. I thought about learning programming
+                and programming languages for a long time, so the february
+                events encourage me to start learning. I haven`t a lot of
+                knowledge now, but I want to study and learn.
+              </p>
+            </section>
+          </td>
+        </tr>
+      </table>
+      <table class="table_2">
+        <tr><!-- ПЕРВАЯ строка -->
+          <td>
+            <section class="chapter"><!--Contacts-->
+              <h2 id="contacts">Contacts:</h2>
+              <ul>
+                <li>Kharkov, Ukraine</li>
+                <li>rs-nickname: bulgakovatodays</li>
+                <li>telegram: @bulgakovatodays</li>
+              </ul>
+            </section>
+          </td>
+                <td><section class="chapter"><!--Education-->
+                  <h2 id="courses">Education:</h2>
+                  <p>This course de facto is my first big course.</p>
+                  <p>Inside it I have successfully completed:</p>
+                  <ul>
+                    <li>
+                      the course <a href="https://ru.code-basics.com/languages/html">"HTML for beginners"</a>
+                    </li>
+                    <li>
+                      the course <a href="https://ru.code-basics.com/languages/css">"CSS for beginners"</a>
+                    </li>                  
+                  </ul>
+                </section>
+              </td>
+        </tr>
 
-    <hr>
-<!--Chapter #3-->
-    <section class="chapter chapter_3">
-      <h2 id="skills">Skills:</h2>
-      <p>basics HTML, CSS and JavaSkript</p>
-    </section>
+        <tr><!-- ВТОРАЯ строка -->
+          <td>
+            <section class="chapter"><!--Skills-->
+              <h2 id="skills">Skills:</h2>
+                <ul>
+                  <li>basics HTML</li>
+                  <li>basics CSS </li>
+                  <li>basics JavaSkript</li>
+                </ul>
+            </section>
+          </td>
 
-    <hr>
-<!--Chapter #4-->
-    <section class="chapter chapter_4">
-      <h2 id="code">Code examples:</h2>
-      <pre><code>
-        const capitalizeFirstWord = (s) => {
-        return s.replace(s[0], s[0].toUpperCase());
-        }
-      </code></pre>
-    </section>
+          <td>
+            <section class="chapter"><!--Code-->
+              <h2 id="code">Code examples:</h2>
+              <pre><code>
+const capitalizeFirstWord = (s) => {
+return s.replace(s[0], s[0].toUpperCase());
+}
+              </code></pre>
+            </section>
+          </td>
+        </tr>
 
-    <hr>
-<!--Chapter #5-->
-    <section class="chapter chapter_5">
-      <h2 id="projects">Work experience:</h2>
-      <p>At this moment I have done only <a href="https://github.com/bulgakovatodays/rsschool-cv/tree/rsschool-cv-html">this CV.</a></p>
-    </section>
+        <tr><!-- ТРЕТЬЯ строка -->
+          <td>
+            <section class="chapter"><!--English-->
+              <h2 id="english">English level:</h2>
+              <p>B1 (pre-intermediate)</p>
+            </section>  
+          </td>
 
-    <hr>
-<!--Chapter #6-->
-    <section class="chapter chapter_6">
-      <h2 id="courses">Education:</h2>
-      <p>This course de facto is my first big course.</p>
-      <p>Inside it I have successfully completed:</p> 
-        <ul>
-          <li>the course <a href="https://ru.code-basics.com/languages/html">"HTML for beginners"</a></li>
-        </ul>
-    </section>
+          <td>
+            <section class="chapter"><!--Experience-->
+              <h2 id="projects">Work experience:</h2>
+              <p>
+              At this moment I have done only
+              <a href="https://github.com/bulgakovatodays/rsschool-cv/tree/rsschool-cv-html">this CV.</a>
+              </p>
+            </section>
+          </td>
+        </tr>
+      </table>
 
-    <hr>
-<!--Chapter #7-->
-    <section class="chapter chapter_7">
-      <h2 id="english">English level:</h2>
-      <p>B1 (pre-intermediate)</p>
-    </section>
-
-    <hr>
-
-    <footer>
-      <img src="./assets/img/rs_school_js.svg" alt="logo" width="100" height="50">
-      <address><a href="https://github.com/bulgakovatodays">O.V. Bulgakova</a>
-        <br><a href="https://rs.school/js/"> RS School</a></address>
-      <time datetime="2022">2022</time>      
-    </footer>
-  </main>
-</body>
+      <footer>
+        <table class="table_3">
+          <tr>
+            <td>
+              <img src="./assets/img/rs_school_js.svg" alt="logo" width="100" height="50">
+            </td>
+            <td>
+              <pre>   </pre>
+            </td>
+            <td>
+              <a href="https://github.com/bulgakovatodays">O.V. Bulgakova</a>
+              <p>2022. <a href="https://rs.school/js/"> RS School</a></p>
+            </td>
+          </tr>
+        </table>
+      </footer>
+    </main>
+  </body>
 </html>
