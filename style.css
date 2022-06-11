@@ -53,6 +53,12 @@ h2 {
 
 /* table 1-2*/
 
+.table_1,.table_2,.table_3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .profile__avatar {
   -o-object-fit: cover;
      object-fit: cover;
