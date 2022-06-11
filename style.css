@@ -1,31 +1,26 @@
 /* Универсальный селектор (звездочка) установил границы и внутренние отступы будут учитываться 
 в значениях, которые вы указываете в ширине и высоте элемента */
 * {
+  padding: 0px;
+  margin: 2px;
+  border: 2px;
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Joan', serif;
   min-height: 100vh;
+  background-color: rgb(255, 227, 168);;
 }
 
-.nav-link {
-  padding: 5px;
-  border: 1px solid #100;
-  color: brown; 
-}
-
-nav {
-  text-decoration: none;
-}
-
-.chapter_2 {
-  text-align: justify;
+header, footer {
+  background-color: rgb(252, 217, 104);;
 }
 
 h1 {
   color:rgb(240, 25, 68);
   text-align:center;
+  padding: 10px;
 }
 
 h2 {
@@ -33,9 +28,57 @@ h2 {
   font-variant: small-caps;
 }
 
-/* 
-m10 + Tab = margin: 10px;
-p10 + Tab = padding: 10px;
-bgc + Tab = background-color:
-bgi + Tab = background-image: url();
-*/
+/* nav */
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav-link {
+  padding: 10px;
+  border: 1px solid #100;
+  color: rgb(114, 79, 2); 
+  text-decoration: none;
+}
+
+/* table 1-2*/
+
+.profile__avatar {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.chapter {
+  color: black;
+  padding: 10px;
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  -o-object-fit: cover;
+  object-fit: cover;
+border-radius: 5%;
+}
+
+.table_2 {
+  padding: 10px;
+  margin: 0% 10%;
+}
+
+.chapter_2 {
+  text-align: justify;
+}
+
+/* table 3 */
+.table_3 {
+padding: 0% 30%; 
+}
